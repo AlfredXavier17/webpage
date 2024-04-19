@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betelgeuse | Learn About OuterSpace </title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,9 +22,9 @@
                 <li><a href="#">Galaxies</a></li>
                 <li><a href="#">News & Updates</a></li>
             </ul>
+
             <button type="button" id="subscribe">Subscribe</button>
         </nav>
-
         <div class="content">
             <h2>Unraveling the secrets of space</h2>
             <p>Explore distant galaxies, learn about planetary
@@ -74,13 +76,71 @@
                     “Orbiting Earth in the spaceship, I saw how beautiful our planet is. People, let us preserve and
                     increase this beauty, not destroy it!”
                 </i>
-            </br>
-            </br>
-            </br>
+                </br>
+                </br>
+                </br>
                 <hr>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">explore</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">donate</a></li>
+                        <li><a href="#">terms of use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.addEventListener('click', function () {
+            console.log('asdf')
+            dropDownMenu.classList.toggle('.open')
+            const isOpen = dropDownMenu.classList.contains('.open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-arrow-circle-up'
+                : 'fa-solid fa-bars';
+
+        })
+    </script>
 
 
 </body>
